@@ -1,32 +1,47 @@
 ---
 layout: default
+title: "Impyr.io Development Documentation"
 ---
-<div>
-    <div>
+
+<main id="main">
+    <head id="hero">
         <h1>Impyr.io</h1>
         <p>Development Documentation</p>
-    </div>
-    <div>
+    </head>
+    <section id="components">
         <h2>Components</h2>
-    </div>
-    <div class="row gutters">
-        <div class="col col-4 item">
-            <figure>
-                <img src="/assets/archon.svg" alt="archon" width="48" height="48">
-            </figure>
-            <h3>Archon</h3>
+        <p>Every Impyr.io instance consists of a number of components, each
+           responsible for a subset of tasks of the instance as a whole. This
+           separation of components is maintained for security (information
+           hiding) and cleanliness (modularity):</p>
+        <div class="row gutters">
+            <div class="col col-4 item">
+                <figure>
+                    <img src="/assets/archon.svg" alt="archon" width="48" height="48">
+                </figure>
+                <h3>Archon</h3>
+                <p>The Archon governs user-interaction with the instance and
+                   integrates state changes dynamically. In many ways, the 
+                   Archon <em>is</em> the instance.</p>
+            </div>
+            <div class="col col-4 item">
+                <figure>
+                    <img src="/assets/container.svg" alt="container" width="48" height="48">
+                </figure>
+                <h3>Host</h3>
+                <p>The host launches and manages the Archon, abstracting many
+                   of the complexities of operating a HTTP server away from the
+                   Archon.</p>
+            </div>
+            <div class="col col-4 item">
+                <figure>
+                    <img src="/assets/cluster.svg" alt="cluster" width="48" height="48">
+                </figure>
+                <h3>Cluster</h3>
+                <p>The Cluster launches and manages the Host and orchestrates
+                   the process of starting and stopping the instance as a
+                   whole.</p>
+            </div>
         </div>
-        <div class="col col-4 item">
-            <figure>
-                <img src="/assets/container.svg" alt="container" width="48" height="48">
-            </figure>
-            <h3>Host</h3>
-        </div>
-        <div class="col col-4 item">
-            <figure>
-                <img src="/assets/cluster.svg" alt="cluster" width="48" height="48">
-            </figure>
-            <h3>Cluster</h3>
-        </div>
-    </div>
-</div>
+    </section>
+</main>

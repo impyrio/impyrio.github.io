@@ -1,0 +1,19 @@
+#main { margin: 0 6%; }
+#hero {
+    margin-top: 128px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+#hero h1 {
+    max-width: 880px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+    font-size: 72px;
+    line-height: 80px;
+    font-weight: 900;
+}
+#hero p { color: #444; }
+#components { margin-top: 64px; }
+#components h3 { margin-top: 0; }
+#components div { text-align: center; }
