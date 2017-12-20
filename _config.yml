@@ -1,1 +1,8 @@
-theme: jekyll-theme-slate
+# Global Settings
+title: "Impyr.io Development Documentation"
+authors: "Patrick Kohler and Impyr.io contributors"
+layout: default
+permalink: pretty
+
+# Build
+markdown: kramdown
